@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="Français">
+    <head>
+        <meta charset="utf-8">
+        <title>Prince-developpeur web </title>
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+        <style>
+            body {margin: 0; font-family: Arial; background: black; color: white;}
+            .menu { display: none; flex-direction: column; background: #222; position: absolute;
+                 top: 60px; right: 0; width: 200Px; padding: 10px; color: white;}
+             .menu.show {display: flex;}
+             .menuBtn {display: block; font-size: 20px;}
+            .header {height: 50vh; background: blue; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center; padding: 20px;}
+            .btn {margin-top: 20px; padding: 12px 25px; background: gold; color: black;text-decoration: none;
+                border-radius: 25px; font-weight: bold;}
+            
+            .projets {display: flex; justify-content: left; gap: 20px; flex-wrap: wrap;}
+            .card {background: #020617; padding: 20px; border-radius: 50px; max-width: 200px;}
+       
+        </style>
+    </head>
+    <body>
+        <button id="menuBtn" class="menu-btn">⇶</button>
+        <nav id="menu" class="menu">
+            <a href="#apropos">À propos</a>
+            <a href="services">Services</a>
+            <a href="projets">Projets</a>
+            <a href="contact">Contact</a>
+        </nav>
+            
+        <header class="header">
+     
+            <h1>Prince-web</h1>
+            <p>Developpeur web | sites modernes et professionnels</p>
+            <a href="https://wa.me/243898570814" target="_blank" class="btn">Me contacter sur WhatsApp</a>
+
+        </header>
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>Je suis développeur web. Je crée des cites modernes pour les entreprises, restaurants,boutiques et particuliers.</p>
+
+        </section>
+        <section id="services">
+            <h2>Mes services</h2>
+            <ul>
+                <li>Site vitrine professionnel</li>
+                <li>Site pour restaurant</li>
+                <li>Site pour boutique</li>
+                <li>Site pour école</li>
+                <li>Site pour église</li>
+                <li>Amelioration de site existant</li>
+            </ul>
+
+        </section>
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <div class="projets">
+                <div class="card">Restaurant dela paix</div>
+                <div class="card">Site Eglise</div>
+                <div class="card">Site Ecole</div>
+                <div class="card">Site Boutique</div>
+            </div>
+
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email :
+                <a href="mailto:pngoynawej7@gmail.com">pngoynawej7@gmail.com</a>
+            </p>
+            <p>Whatsapp : <a href="https://wa.me/243898570814">+243898570814</a>
+            </p>
+        </section>
+        <script>
+            console.log("Portfolio Prince Chargé !");
+            const menuBtn = document.getElementById("menuBtn");
+            const menu = document.getElementById("menu");
+            menuBtn.addEventListener("click", function() {nav.classList.toggle("show");});
+        </script>
+    </body>
+
+
+
+
+</html>
