@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="Français">
+    <head>
+        <meta charset="utf-8">
+        <title> Mon Restaurant </title>
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+        <style>
+            body { margin: 0; font-family: Arial, sans-serif;}
+            header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #222; color: white;}
+            
+            nav a {color: white; margin-left: 15px; text-decoration: none;}
+            
+            .hero {background-image: url(hero.jpg); background-position: center; background-size: cover;
+                 background-repeat: no-repeat; height: 30vh; color: red; font-size: 3vh; border: 2Px solid red;}
+            .hero p {color: blue; }
+            section { padding: 40px 20px; text-align: center; font-size: 20px;}
+            .plats { display: flex; justify-content: center; gap: 40px;}
+            .plat { background: yellow; color: black; text-align: center; padding: 20px; margin: 10px; border-radius: 60px; font-size: 15Px;}
+            footer {background: #222; text-align: center; color: red; padding: 20px;}
+            @media (max-width: 600Px) { nav { display: none;flex-direction: column; background: #222; position: absolute;
+                 top: 60px; right: 0; width: 200Px; padding: 10px;}
+                 nav.show {display: flex;}
+                #menuBtn {display: block; font-size: 20px;}
+                .plats { flex-direction: column;}
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">🍽 Restaurant dela paix </div>
+            <nav id="nav">
+                <a href="#home"> Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="menuBtn">⇶</button>
+        </header>
+        <section id="home" class="hero">
+            
+            <h1> Bienvenue chez Restaurant dela paix </h1>
+            <p> La meilleure nourriture de la ville c'est chez nous </p>
+            <button> Voir le menu </button>
+        </section>
+        <section id="about">
+            <h2> À propos </h2>
+            <p> nous sommes un restaurant moderne qui propose des plats délicieux </p>
+        </section>
+        <section id="menu">
+            <h2> Notre Menu </h2>
+            <div class="plats">
+                <div class="plat">🍕 pizza - 10$</div>
+                <div class="plat">🍔 burger - 8$</div>
+                <div class="plat">🍝 pates - 15$</div>
+                <div class="plat">🥗 salades vertes - 15$</div>
+                <div class="plat">🥂 bière - 5$</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2> Contact </h2>
+            <p> Téléphone : <a href="https://wa.me/243898570814" target="_blank" class="btn">+243898570814</a> </p>
+            <P> Email :  <a href="mailto:pngoynawej7@gmail.com">pngoynawej7@gmail.com</a> </P>
+        </section>
+        <footer>© 2026 Restaurant dela paix</footer>
+
+        <script>
+            const menuBtn = document.getElementById("menuBtn");
+            const nav = document.getElementById("nav");
+            menuBtn.addEventListener("click", function() {nav.classList.toggle("show");});
+        </script>
+    </body>
+
+</html>
